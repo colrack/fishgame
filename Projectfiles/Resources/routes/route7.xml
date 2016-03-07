@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<route>
+	<parameters>
+		<!-- la lunghezza del percorso di gara in Unit -->
+		<par name="RACE_LENGTH" value="5550"/>
+
+		<!-- numero totale degli ostacoli proposti -->
+		<par name="NUM_DIFFICULTIES" value="36"/>
+
+		<!-- numero totale degli eventi che richiedano una scelta tra lettere (type= "2" o "3") -->
+		<par name="NUM_LETTERS" value="14"/>
+
+	</parameters>
+
+	<difficulties>
+	<!-- legenda per l'attributo "effect": -->
+	<!-- (lettera/parametro interessato) 'v'/velocita', 'p'/punteggio;
+		 il valore intero (positivo o negativo, col '+' o '-' preposto)
+		 che segue la lettera indica la variazione da applicare -->
+	<!-- nel caso si vogliano applicare piu' effetti,
+		 separarli con una virgola, senza spazi; l'ordine non e' rilevante -->
+	<!-- tutti gli effetti che si richiede di applicare
+		 devono avere lo stesso segno (tutti positivi o tutti negativi), e
+		 possono coinvolgere ogni attributo al piu' una singola volta;
+		 e.g.: "v+2,v+1" o "v-2,p+1" NON SONO CORRETTI, mentre "p-1,v-2" SI' -->
+
+		<difficulty type="1" distance="150">
+			<cue pos="1"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="" effect="" type="empty"/>
+			<position number="2" img="difficulty4" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="0" distance="125">
+			<position number="0" img="difficulty6" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="3"/>
+			<position number="0" img="difficulty6" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="" effect="" type="empty"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="z"/>
+			<position number="0" img="difficulty18" effect="v+4,p+1" onPick="vanish" type="letter"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/> 
+			<position number="2" img="difficulty17" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="3" img="difficulty5" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="2"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty0" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="3" distance="190">
+			<cue group="gnrv" place="1"/> 
+			<position number="0" img="difficulty29" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="1" img="difficulty39" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="2" img="difficulty35" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="3" img="difficulty33" effect="v+4,p+1" onPick="difficulty24" type="letter"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="0"/>
+			<position number="0" img="" effect="" type="empty"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty4" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="a"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/> 
+			<position number="1" img="difficulty19" effect="v+4,p+1" onPick="vanish" type="letter"/>
+			<position number="2" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty20" effect="p-1" onPick="vanish" type="letter"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="3"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty5" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="" effect="" type="empty"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="u"/>
+			<position number="0" img="difficulty9" effect="v+4,p+1" onPick="vanish" type="letter"/>
+			<position number="1" img="difficulty8" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="2" img="difficulty6" effect="v-2,p-1" type="obstacle"/> 
+			<position number="3" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="3"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty5" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="" effect="" type="empty"/>
+		</difficulty>
+
+		<difficulty type="0" distance="125">
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty5" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="3"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty0" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="" effect="" type="empty"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="f"/>
+			<position number="0" img="difficulty13" effect="v+4,p+1" onPick="vanish" type="letter"/>
+			<position number="1" img="difficulty12" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="2" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="2"/>
+			<position number="0" img="difficulty6" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="3" distance="190">
+			<cue group="ilru" place="3"/> 
+			<position number="0" img="difficulty38" effect="v+4,p+1" onPick="difficulty24" type="letter"/>
+			<position number="1" img="difficulty31" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="2" img="difficulty35" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="3" img="difficulty30" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="1"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="" effect="" type="empty"/>
+			<position number="2" img="difficulty4" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="m"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty8" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="3" img="difficulty7" effect="v+4,p+1" onPick="vanish" type="letter"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="2"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty5" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="0" distance="125">
+			<position number="0" img="" effect="" type="empty"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty0" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="3"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty4" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="" effect="" type="empty"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="o"/>
+			<position number="0" img="difficulty14" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="1" img="difficulty15" effect="v+4,p+1" onPick="vanish" type="letter"/>
+			<position number="2" img="difficulty4" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="2"/>
+			<position number="0" img="difficulty6" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="3" distance="190">
+			<cue group="aotz" place="2"/> 
+			<position number="0" img="difficulty25" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="1" img="difficulty34" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="2" img="difficulty40" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="3" img="difficulty37" effect="v+4,p+1" onPick="difficulty24" type="letter"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="2"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty0" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="i"/>
+			<position number="0" img="difficulty21" effect="v+4,p+1" onPick="vanish" type="letter"/>
+			<position number="1" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty22" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="3" img="difficulty0" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="3"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty5" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="" effect="" type="empty"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="s"/>
+			<position number="0" img="difficulty18" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="1" img="difficulty17" effect="v+4,p+1" onPick="vanish" type="letter"/>
+			<position number="2" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty5" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="2"/>
+			<position number="0" img="difficulty6" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="0" distance="125">
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="" effect="" type="empty"/>
+			<position number="2" img="difficulty4" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="3"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty5" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="" effect="" type="empty"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="t"/>
+			<position number="0" img="difficulty4" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty13" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="2" img="difficulty16" effect="v+4,p+1" onPick="vanish" type="letter"/>
+			<position number="3" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="2"/>
+			<position number="0" img="difficulty6" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="" effect="" type="empty"/>
+			<position number="3" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="3" distance="190">
+			<cue group="fgor" place="1"/> 
+			<position number="0" img="difficulty29" effect="v+4,p+1" onPick="difficulty24" type="letter"/>
+			<position number="1" img="difficulty28" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="2" img="difficulty35" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+			<position number="3" img="difficulty34" effect="v-2,p-1" onPick="difficulty23" type="letter"/>
+		</difficulty>
+
+		<difficulty type="1" distance="150">
+			<cue pos="1"/>
+			<position number="0" img="difficulty1" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="" effect="" type="empty"/>
+			<position number="2" img="difficulty4" effect="v-2,p-1" type="obstacle"/>
+			<position number="3" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+		</difficulty>
+
+		<difficulty type="2" distance="150">
+			<cue letter="c"/>
+			<position number="0" img="difficulty3" effect="v-2,p-1" type="obstacle"/>
+			<position number="1" img="difficulty2" effect="v-2,p-1" type="obstacle"/>
+			<position number="2" img="difficulty11" effect="p-1" onPick="vanish" type="letter"/>
+			<position number="3" img="difficulty10" effect="v+4,p+1" onPick="vanish" type="letter"/>
+		</difficulty>
+	</difficulties>
+</route>
