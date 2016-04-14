@@ -1,5 +1,11 @@
 # Fishgame - A serious game based on Kobold2d and Cocos2d
 
+### Screenshots
+<img src="https://github.com/colrack/fishgame/blob/master/docs/img/start.png" width="400">
+<img src="https://github.com/colrack/fishgame/blob/master/docs/img/cue_aegv.png" width="400">
+
+[Altri screenshots](https://github.com/colrack/fishgame/blob/master/docs/img/screenshots.md) 
+
 ### Breve storia
 Questo gioco è stato sviluppato a cavallo tra il 2012 e il 2013 per il progetto di Reti Wireless all'università.
 È un'implementazione nativa dello stesso gioco precedentemente sviluppato con tecnologie web da un altro studente; il gioco è ospitato su [math.unipd.it](http://giochiamo.math.unipd.it/index.html).
@@ -14,7 +20,7 @@ Per provare il progetto è necessario avere Mac OS X Mountain Lion 10.8 ed insta
 
 ### Come compilare e far partire il progetto
 Installate [Xcode 4.6.3](http://adcdownload.apple.com/Developer_Tools/xcode_4.6.3/xcode4630916281a.dmg); potete scaricarlo da Apple Developer Center (dovete essere registrati come sviluppatori e loggati). Potete anche eventualmente scaricare i [Command Line Tools](http://adcdownload.apple.com/Developer_Tools/command_line_tools_os_x_mountain_lion_for_xcode__april_2013/xcode462_cltools_10_86938259a.dmg) di allora che includono tra l'altro git.
-Ho incluso una copia di Kobold2D nella pagina della release (https://github.com/colrack/fishgame/releases). Installate il pacchetto [Kobold2D_v2.1.0.pkg](https://github.com/colrack/fishgame/releases/download/untagged-037fef668ad90cc19ea5/Kobold2D_v2.1.0.pkg). Successivamente clonate il progetto `git clone https://github.com/colrack/fishgame.git` in `/Users/username/Kobold2D/Kobold2D-2.1.0/` oppure scaricate e scompattate (fishgame-src-1.0.zip](https://github.com/colrack/fishgame/releases/download/untagged-037fef668ad90cc19ea5/fishgame-src-1.0.zip) nella cartella citata.
+Ho incluso una copia di Kobold2D nella pagina della release (https://github.com/colrack/fishgame/releases). Installate il pacchetto [Kobold2D_v2.1.0.pkg](https://github.com/colrack/fishgame/releases/download/untagged-037fef668ad90cc19ea5/Kobold2D_v2.1.0.pkg). Successivamente clonate il progetto `git clone https://github.com/colrack/fishgame.git` in `/Users/username/Kobold2D/Kobold2D-2.1.0/` oppure scaricate e scompattate [fishgame-src-1.0.zip](https://github.com/colrack/fishgame/releases/download/untagged-037fef668ad90cc19ea5/fishgame-src-1.0.zip) nella cartella citata.
 Aprite con Xcode `Kobold2D.xcworkspace` ed importate il progetto `FishGame.xcodeproj` nel workspace.
 
 Passo 1
